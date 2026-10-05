@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="UL-UNAS speech enhancement audio comparisons with RNNoise and GTCRN on DNS3 samples.">
+	<meta name="author" content="Xiaobin-Rong">
+
+        <title>Audio examples for UL-UNAS</title>
+
+        <!-- <style>
+            body{text-align:center}
+        </style>  -->
+
+        <link rel="stylesheet" href="index.css" />
+    </head>
+
+    <body>
+        <div class="header">
+            <h1 class="mt-5">Audio examples for UL-UNAS</h1>
+	<p align="center">
+	       <a class="btn btn-primary" href="https://github.com/Xiaobin-Rong/ul-unas">Code</a>
+               <a class="btn btn-primary" href="https://doi.org/10.1109/TASLPRO.2026.3661271">Paper</a>
+	</p>
+        </div>
+
+        <br>
+
+        <div class="narrow-container">
+            <p class="intro">Compare UL-UNAS with RNNoise and GTCRN using the same ten noisy recordings from the original GTCRN demo. UL-UNAS outputs were generated locally using the authors’ DNS3 checkpoint; this is an adapted demo, not an official author release.</p>
+            <div class="comparisons-desktop" align="center">
+                <h2>Performance on DNS3 test set</h2>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="col">Noisy</th>
+                            <th scope="col">Enhanced by RNNoise [1]</th>
+                            <th scope="col">Enhanced by GTCRN</th>
+                            <th scope="col">Enhanced by UL-UNAS</th>
+			    <th scope="col">clean</th>
+                        </tr>
+
+                        <tr>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Noisy: 0015_noisy">
+                                        <source src="samples/DNS3_test_set/0015_noisy.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="RNNoise: 0015_RNNoise">
+                                        <source src="samples/DNS3_test_set/0015_RNNoise.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="GTCRN: 0015_GTCRN">
+                                        <source src="samples/DNS3_test_set/0015_GTCRN.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="UL-UNAS: 0015_UL-UNAS">
+                                        <source src="samples/DNS3_test_set/0015_UL-UNAS.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Clean: 0015_clean">
+                                        <source src="samples/DNS3_test_set/0015_clean.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Noisy: 0016_noisy">
+                                        <source src="samples/DNS3_test_set/0016_noisy.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="RNNoise: 0016_RNNoise">
+                                        <source src="samples/DNS3_test_set/0016_RNNoise.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="GTCRN: 0016_GTCRN">
+                                        <source src="samples/DNS3_test_set/0016_GTCRN.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="UL-UNAS: 0016_UL-UNAS">
+                                        <source src="samples/DNS3_test_set/0016_UL-UNAS.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Clean: 0016_clean">
+                                        <source src="samples/DNS3_test_set/0016_clean.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Noisy: 0072_noisy">
+                                        <source src="samples/DNS3_test_set/0072_noisy.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="RNNoise: 0072_RNNoise">
+                                        <source src="samples/DNS3_test_set/0072_RNNoise.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="GTCRN: 0072_GTCRN">
+                                        <source src="samples/DNS3_test_set/0072_GTCRN.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="UL-UNAS: 0072_UL-UNAS">
+                                        <source src="samples/DNS3_test_set/0072_UL-UNAS.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Clean: 0072_clean">
+                                        <source src="samples/DNS3_test_set/0072_clean.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Noisy: 0398_noisy">
+                                        <source src="samples/DNS3_test_set/0398_noisy.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="RNNoise: 0398_RNNoise">
+                                        <source src="samples/DNS3_test_set/0398_RNNoise.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="GTCRN: 0398_GTCRN">
+                                        <source src="samples/DNS3_test_set/0398_GTCRN.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="UL-UNAS: 0398_UL-UNAS">
+                                        <source src="samples/DNS3_test_set/0398_UL-UNAS.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Clean: 0398_clean">
+                                        <source src="samples/DNS3_test_set/0398_clean.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Noisy: 0523_noisy">
+                                        <source src="samples/DNS3_test_set/0523_noisy.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="RNNoise: 0523_RNNoise">
+                                        <source src="samples/DNS3_test_set/0523_RNNoise.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="GTCRN: 0523_GTCRN">
+                                        <source src="samples/DNS3_test_set/0523_GTCRN.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="UL-UNAS: 0523_UL-UNAS">
+                                        <source src="samples/DNS3_test_set/0523_UL-UNAS.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Clean: 0523_clean">
+                                        <source src="samples/DNS3_test_set/0523_clean.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <br><br>
+
+                <h2>Performance on DNS3 blind test set</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="col">Noisy</th>
+                            <th scope="col">Enhanced by RNNoise [1]</th>
+                            <th scope="col">Enhanced by GTCRN</th>
+                            <th scope="col">Enhanced by UL-UNAS</th>
+                        </tr>
+
+                        <tr>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Noisy: ms_realrec_nonenglish_laptop_mic_Anna_speech_noise_fileid_6_PLpart_1">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_nonenglish_laptop_mic_Anna_speech_noise_fileid_6_PLpart_1.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="RNNoise: ms_realrec_nonenglish_laptop_mic_Anna_speech_noise_fileid_6_PLpart_1_RNNoise">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_nonenglish_laptop_mic_Anna_speech_noise_fileid_6_PLpart_1_RNNoise.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="GTCRN: ms_realrec_nonenglish_laptop_mic_Anna_speech_noise_fileid_6_PLpart_1_GTCRN">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_nonenglish_laptop_mic_Anna_speech_noise_fileid_6_PLpart_1_GTCRN.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="UL-UNAS: ms_realrec_nonenglish_laptop_mic_Anna_speech_noise_fileid_6_PLpart_1_UL-UNAS">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_nonenglish_laptop_mic_Anna_speech_noise_fileid_6_PLpart_1_UL-UNAS.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Noisy: ms_realrec_english_headset_A1XUZFDVKP95VC_Water_Running__far_fileid_7">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_english_headset_A1XUZFDVKP95VC_Water_Running__far_fileid_7.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="RNNoise: ms_realrec_english_headset_A1XUZFDVKP95VC_Water_Running__far_fileid_7_RNNoise">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_english_headset_A1XUZFDVKP95VC_Water_Running__far_fileid_7_RNNoise.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="GTCRN: ms_realrec_english_headset_A1XUZFDVKP95VC_Water_Running__far_fileid_7_GTCRN">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_english_headset_A1XUZFDVKP95VC_Water_Running__far_fileid_7_GTCRN.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="UL-UNAS: ms_realrec_english_headset_A1XUZFDVKP95VC_Water_Running__far_fileid_7_UL-UNAS">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_english_headset_A1XUZFDVKP95VC_Water_Running__far_fileid_7_UL-UNAS.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Noisy: stationary_english_tug_2489_voss_18_snr3_tl-24_fileid_45">
+                                        <source src="samples/DNS3_blind_test_set/stationary_english_tug_2489_voss_18_snr3_tl-24_fileid_45.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="RNNoise: stationary_english_tug_2489_voss_18_snr3_tl-24_fileid_45_RNNoise">
+                                        <source src="samples/DNS3_blind_test_set/stationary_english_tug_2489_voss_18_snr3_tl-24_fileid_45_RNNoise.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="GTCRN: stationary_english_tug_2489_voss_18_snr3_tl-24_fileid_45_GTCRN">
+                                        <source src="samples/DNS3_blind_test_set/stationary_english_tug_2489_voss_18_snr3_tl-24_fileid_45_GTCRN.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="UL-UNAS: stationary_english_tug_2489_voss_18_snr3_tl-24_fileid_45_UL-UNAS">
+                                        <source src="samples/DNS3_blind_test_set/stationary_english_tug_2489_voss_18_snr3_tl-24_fileid_45_UL-UNAS.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Noisy: ms_realrec_emotional_earphone_A25UMKJS7PC293_kitchenvessels_near_surprise_fileid_7">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_emotional_earphone_A25UMKJS7PC293_kitchenvessels_near_surprise_fileid_7.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="RNNoise: ms_realrec_emotional_earphone_A25UMKJS7PC293_kitchenvessels_near_surprise_fileid_7_RNNoise">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_emotional_earphone_A25UMKJS7PC293_kitchenvessels_near_surprise_fileid_7_RNNoise.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="GTCRN: ms_realrec_emotional_earphone_A25UMKJS7PC293_kitchenvessels_near_surprise_fileid_7_GTCRN">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_emotional_earphone_A25UMKJS7PC293_kitchenvessels_near_surprise_fileid_7_GTCRN.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="UL-UNAS: ms_realrec_emotional_earphone_A25UMKJS7PC293_kitchenvessels_near_surprise_fileid_7_UL-UNAS">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_emotional_earphone_A25UMKJS7PC293_kitchenvessels_near_surprise_fileid_7_UL-UNAS.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="Noisy: ms_realrec_emotional_openspeaker_ASEW6NZHLI41K_heavybreathing_near_surprise_fileid_2">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_emotional_openspeaker_ASEW6NZHLI41K_heavybreathing_near_surprise_fileid_2.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="RNNoise: ms_realrec_emotional_openspeaker_ASEW6NZHLI41K_heavybreathing_near_surprise_fileid_2_RNNoise">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_emotional_openspeaker_ASEW6NZHLI41K_heavybreathing_near_surprise_fileid_2_RNNoise.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="GTCRN: ms_realrec_emotional_openspeaker_ASEW6NZHLI41K_heavybreathing_near_surprise_fileid_2_GTCRN">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_emotional_openspeaker_ASEW6NZHLI41K_heavybreathing_near_surprise_fileid_2_GTCRN.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                            <td class='auto-style'>
+                                <div class="audio">
+                                    <audio controls preload="metadata" aria-label="UL-UNAS: ms_realrec_emotional_openspeaker_ASEW6NZHLI41K_heavybreathing_near_surprise_fileid_2_UL-UNAS">
+                                        <source src="samples/DNS3_blind_test_set/ms_realrec_emotional_openspeaker_ASEW6NZHLI41K_heavybreathing_near_surprise_fileid_2_UL-UNAS.wav" type="audio/wav">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        <p>
+            [1] Valin, Jean-Marc. "A hybrid DSP/deep learning approach to real-time full-band speech enhancement." 2018 IEEE 20th international workshop on multimedia signal processing (MMSP). IEEE, 2018.
+        </p>
+        </div>
+    </body>
+</html>

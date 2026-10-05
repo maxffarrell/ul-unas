@@ -1,0 +1,114 @@
+{
+  "model": "UL-UNAS",
+  "checkpoint": "model_trained_on_dns3.tar",
+  "checkpoint_sha256": "9a0656bf8e88d36865792d3065fed9bc33d5ab85e11ae3a1ae085b928fdb49a8",
+  "model_source_sha256": "e53f7550d9698cb0aee0fc517b3f4caeb679d9e3f4c00fa47a0f3a975c228adf",
+  "ul_unas_revision": "00f7c700da43d38347f30a6ccebd86fcbc798e07",
+  "gtcrn_demo_revision": "0e738b64fc7130557f870a3165db68b5ba1d7a64",
+  "inference": "Upstream ULUNAS.forward, CPU float32, eval, inference_mode; no normalization",
+  "torch_version": "2.14.1",
+  "numpy_version": "2.5.3",
+  "soundfile_version": "0.14.0",
+  "results": [
+    {
+      "input": "samples/DNS3_test_set/0015_noisy.wav",
+      "output": "samples/DNS3_test_set/0015_UL-UNAS.wav",
+      "sample_rate": 16000,
+      "frames": 80000,
+      "duration_seconds": 5.0,
+      "input_sha256": "8f31605f758d8bfa158527c1dccdff5c11be0ea9a737a74fc467aef3584392af",
+      "output_sha256": "17ae37d62f6657522f867754d49a004b8c7b9c6dafd4f3f5b99abb9077f416f4",
+      "peak_before_pcm_encoding": 0.29839077591896057
+    },
+    {
+      "input": "samples/DNS3_test_set/0016_noisy.wav",
+      "output": "samples/DNS3_test_set/0016_UL-UNAS.wav",
+      "sample_rate": 16000,
+      "frames": 80000,
+      "duration_seconds": 5.0,
+      "input_sha256": "97b2fd196738d579ae65d5a439f3968c98a94b3801e7c979fdc9f2164899e9b4",
+      "output_sha256": "566da4f871951c1a75b36b35bf2ce43b09943c52ccd10616d739a88e8e2f5722",
+      "peak_before_pcm_encoding": 0.4581317901611328
+    },
+    {
+      "input": "samples/DNS3_test_set/0072_noisy.wav",
+      "output": "samples/DNS3_test_set/0072_UL-UNAS.wav",
+      "sample_rate": 16000,
+      "frames": 80000,
+      "duration_seconds": 5.0,
+      "input_sha256": "6a70e78745559ff99cfa12c75d66922682710cd97830ff82b918467572aaefa7",
+      "output_sha256": "bab0f85c0ea694d41ee26ade7f1799210ee431d77a00142af5aaa760b0313507",
+      "peak_before_pcm_encoding": 0.35978826880455017
+    },
+    {
+      "input": "samples/DNS3_test_set/0398_noisy.wav",
+      "output": "samples/DNS3_test_set/0398_UL-UNAS.wav",
+      "sample_rate": 16000,
+      "frames": 80000,
+      "duration_seconds": 5.0,
+      "input_sha256": "831d0360cb0626c4e20d34296e846dca3198afd71d426db52466cc629df0859e",
+      "output_sha256": "56d73c886105fe8ffa1d77316496a2e57edc188f962fbeacade8ad84ac98c5e0",
+      "peak_before_pcm_encoding": 0.3061998784542084
+    },
+    {
+      "input": "samples/DNS3_test_set/0523_noisy.wav",
+      "output": "samples/DNS3_test_set/0523_UL-UNAS.wav",
+      "sample_rate": 16000,
+      "frames": 80000,
+      "duration_seconds": 5.0,
+      "input_sha256": "d3bcbe013a90a640dbd94d9c2195cff6f5d724bd756be9b5268abda4bd4c80c4",
+      "output_sha256": "b0f4d74dcb27965d4ed4c09084abb63ccb243e06352ea69f831185354bbc9b17",
+      "peak_before_pcm_encoding": 0.3520411550998688
+    },
+    {
+      "input": "samples/DNS3_blind_test_set/ms_realrec_emotional_earphone_A25UMKJS7PC293_kitchenvessels_near_surprise_fileid_7.wav",
+      "output": "samples/DNS3_blind_test_set/ms_realrec_emotional_earphone_A25UMKJS7PC293_kitchenvessels_near_surprise_fileid_7_UL-UNAS.wav",
+      "sample_rate": 16000,
+      "frames": 179630,
+      "duration_seconds": 11.226875,
+      "input_sha256": "ac8c8af9563d5397afc326c21afc689b65535b0cbaa5930bd3f18c44f71feecd",
+      "output_sha256": "b530b9693b19de699a67eb39bc8020ad20b9a7ee6f4b06b6c09ee1da0816d090",
+      "peak_before_pcm_encoding": 0.9994416832923889
+    },
+    {
+      "input": "samples/DNS3_blind_test_set/ms_realrec_emotional_openspeaker_ASEW6NZHLI41K_heavybreathing_near_surprise_fileid_2.wav",
+      "output": "samples/DNS3_blind_test_set/ms_realrec_emotional_openspeaker_ASEW6NZHLI41K_heavybreathing_near_surprise_fileid_2_UL-UNAS.wav",
+      "sample_rate": 16000,
+      "frames": 280497,
+      "duration_seconds": 17.5310625,
+      "input_sha256": "91284717d4589ff8946e202cf548cf2e082aebb847198d40629cc4a7a259dd06",
+      "output_sha256": "7a00266d9021a1ef0e68c96280fff3d4f599b3e48a311aef4e8b8690ee3bc255",
+      "peak_before_pcm_encoding": 0.5437542200088501
+    },
+    {
+      "input": "samples/DNS3_blind_test_set/ms_realrec_english_headset_A1XUZFDVKP95VC_Water_Running__far_fileid_7.wav",
+      "output": "samples/DNS3_blind_test_set/ms_realrec_english_headset_A1XUZFDVKP95VC_Water_Running__far_fileid_7_UL-UNAS.wav",
+      "sample_rate": 16000,
+      "frames": 206937,
+      "duration_seconds": 12.9335625,
+      "input_sha256": "deb0dd43e792f8b46f4644e62f61aad6af1da35ddb7a5f7143c7708e6e6f0509",
+      "output_sha256": "7e3b4f005c3c674c7a0251aa688b2bf1bf3d4d01995085dff39d7fb4091404b0",
+      "peak_before_pcm_encoding": 0.05962205305695534
+    },
+    {
+      "input": "samples/DNS3_blind_test_set/ms_realrec_nonenglish_laptop_mic_Anna_speech_noise_fileid_6_PLpart_1.wav",
+      "output": "samples/DNS3_blind_test_set/ms_realrec_nonenglish_laptop_mic_Anna_speech_noise_fileid_6_PLpart_1_UL-UNAS.wav",
+      "sample_rate": 16000,
+      "frames": 192000,
+      "duration_seconds": 12.0,
+      "input_sha256": "9678f75a7676fc57c3e488d5bae1c3be3b53b5021ce070ec50083ab74b757341",
+      "output_sha256": "3bb95b60759f3b8dda2d2559155fd702454a04990e313c7a96157999828f1dd1",
+      "peak_before_pcm_encoding": 0.7569820880889893
+    },
+    {
+      "input": "samples/DNS3_blind_test_set/stationary_english_tug_2489_voss_18_snr3_tl-24_fileid_45.wav",
+      "output": "samples/DNS3_blind_test_set/stationary_english_tug_2489_voss_18_snr3_tl-24_fileid_45_UL-UNAS.wav",
+      "sample_rate": 16000,
+      "frames": 228580,
+      "duration_seconds": 14.28625,
+      "input_sha256": "4526e19d23a9b515b5e0e34dfb982909faa0d326f186eb403437d7613fb21a1e",
+      "output_sha256": "95abca7634088510d51df72c1f58d0ce23afaf8a0324bf22bd054f98ebbf7a96",
+      "peak_before_pcm_encoding": 0.9143191576004028
+    }
+  ]
+}
